@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>はる｜ポートフォリオ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.7;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 32px 16px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: 0.08em; }
+    header p { margin: 4px 0; font-size: 14px; opacity: 0.8; }
+    main { max-width: 900px; margin: 24px auto 40px; padding: 0 16px; }
+    section {
+      background: #fff; margin-bottom: 16px; padding: 20px 18px;
+      border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    section h2 {
+      margin-top: 0; font-size: 20px;
+      border-left: 4px solid #111; padding-left: 8px;
+    }
+    .works-list { list-style: none; padding: 0; margin: 0; }
+    .works-list li {
+      padding: 10px 0; border-bottom: 1px solid #eee;
+    }
+    .works-list li:last-child { border-bottom: none; }
+    .work-title { font-weight: bold; font-size: 15px; }
+    .work-tag {
+      background: #eee; padding: 2px 6px; border-radius: 999px;
+      font-size: 11px; margin-left: 6px;
+    }
+    .work-desc { margin: 4px 0; }
+    .work-meta { color: #666; font-size: 12px; }
+    footer {
+      text-align: center; font-size: 12px;
+      color: #777; padding: 16px 0 32px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>はる / Haru</h1>
+  <p>小説家志望 / Fiction Writer</p>
+  <p>日常と非日常の境界を歩く物語を書いています。</p>
+</header>
+
+<main>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      現代の青春、すこしだけずれた現実、そして「優しい世界の中の残酷さ」。<br>
+      そういった境界の空気を持つ物語を書くのが好きです。<br>
+      心の揺れや孤独、再生の瞬間を、静かでやわらかな文体で描くことを大切にしています。
+    </p>
+  </section>
+
+  <section id="works">
+    <h2>Works</h2>
+    <ul class="works-list">
+
+      <li>
+        <div class="work-title">
+          刺青といちご
+          <span class="work-tag">短編</span>
+        </div>
+        <p class="work-desc">
+          夜の水槽のような街で、刺青を入れる少女と出会う少年の物語。  
+          痛みと救済が入り混じる青春の一夜を描く短編。
+        </p>
+        <p class="work-meta">
+          ジャンル：青春 / 片恋 / 静かなドラマ<br>
+          状態：完成
+        </p>
+      </li>
+
+      <li>
+        <div class="work-title">
+          銃男
+          <span class="work-tag">短編</span>
+        </div>
+        <p class="work-desc">
+          「朝起きたら右腕が銃になっていた」少年の物語。  
+          異能と日常の境界を、文学寄りのタッチで描いた作品。
+        </p>
+        <p class="work-meta">
+          ジャンル：スリップストリーム / 自己喪失<br>
+          状態：完成
+        </p>
+      </li>
+
+      <li>
+        <div class="work-title">
+          幸福のカレー
+          <span class="work-tag">短編</span>
+        </div>
+        <p class="work-desc">
+          家族の崩壊と、その中で一皿のカレーがもたらす“幸福の記憶”を描いた作品。  
+          悲しみの底から少しだけ世界が明るくなる、静かな再生の物語。
+        </p>
+        <p class="work-meta">
+          ジャンル：家族 / 再生 / 日常系<br>
+          状態：完成
+        </p>
+      </li>
+
+      <li>
+        <div class="work-title">
+          未来の恋人
+          <span class="work-tag">短編（草稿）</span>
+        </div>
+        <p class="work-desc">
+          「私は未来から来た、あなたの恋人です」と名乗る女性が現れる短編SF。  
+          原稿用紙8枚まで執筆済み。時間のねじれと喪失、恋のはじまりを描く。
+        </p>
+        <p class="work-meta">
+          ジャンル：SF / 恋愛 / 日常のズレ<br>
+          状態：草稿
+        </p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Writing Style</h2>
+    <p>テーマとして扱うもの：</p>
+    <ul>
+      <li>すこし不思議な日常</li>
+      <li>静かな絶望と再生</li>
+      <li>スリップストリーム的構造</li>
+      <li>心の揺れ・孤独感</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> Haru
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
